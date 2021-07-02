@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const url = "mongodb+srv://prakashVaithianathan:Indu07@praka18@cluster0.mruhe.mongodb.net/school-management?retryWrites=true&w=majority";
+const url = process.env.MONGO_URL;
 
 const mongoDb = async ()=>{
     try {
